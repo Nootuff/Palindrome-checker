@@ -1,0 +1,150 @@
+:root {
+  --dark-blue: #1d0099;
+  --dark-grey: #3b3b3b;
+}
+
+body {
+  font-family: "Do Hyeon", sans-serif, Impact, Charcoal, sans-serif;
+  text-align: center;
+  background-color: var(--dark-grey);
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.dark-blue {
+  color: var(--dark-blue);
+}
+
+#title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#container {
+  background-color: white;
+  width: 90%;
+  height:fit-content; 
+  display: inline-block;
+}
+
+#input {
+  width: 60%;
+  font-size: 30px;
+  border-radius: 0%;
+  border: 2px solid var(--dark-grey);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.response {
+  opacity: 0;
+  cursor: default;
+  position: absolute;
+  padding-top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+}
+
+#button-container {
+  margin-top: 5px;
+  height: 30px;
+}
+
+#button {
+  border-radius: 25px;
+  height: 30px;
+  width: 50%;
+  font-size: 20px;
+  outline: none;
+  border: 1.5px solid var(--dark-grey);
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*, this prevents the button flashing black when tapped on a touchscreen */
+  transition: all 0.2s ease-out;
+}
+
+#button:active {
+  transform: scale(0.9); /*, shrinks whole button & contents on click */
+}
+
+hr {
+  width: 80%;
+  margin-top: 120px;
+  height: 1px;
+  border-width: 0;
+  background-color: var(--dark-grey);
+}
+
+ul {
+  text-align: left;
+  font-size: 20px;
+  width: 80%;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 2%;
+}
+
+footer {
+  background-color: var(--dark-grey);
+  height: 60px;
+  text-align: center;
+  color: white;
+ 
+}
+
+#footerPara {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 15px;
+}
+
+/* phone vertical */
+@media only screen and (max-width: 450px) {
+  #input {
+    width: 90%;
+  }
+
+  ul {
+    font-size: 15px;
+    scroll-margin-bottom: 25px;
+  }
+
+  li {
+    margin-bottom: 4%;
+  }
+
+  .response {
+    font-size: 22px;
+  }
+
+  #container {
+height: 5000px;
+  }
+
+  #button:active {
+    transform: scale(0.8);
+  }
+
+  #footerPara {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

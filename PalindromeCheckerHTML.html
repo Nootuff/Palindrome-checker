@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Palindrome Checker</title>
+  <script>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  </script>
+  <link rel="stylesheet" href="PalindromeCheckerCSS.css">
+</head>
+<body>
+  <div id="container">
+    <h1 id="title">Is it a <span class="dark-blue italic">Palindrome</span>?</h1>
+    <p>Enter a <span class="bold">word</span> or <span class="bold">phrase</span></p>
+    <span id="inputHolder"><input type="text" id="input" name="input"></span><br>
+  <div id="button-container"> 
+   <button id="button" ontouchstart="" onclick="palindrome()">Check</button>
+  </div>
+    
+    <h1 class="response" id="correct"><span class="dark-blue">Yes!</span> It's a palindrome!</h1>
+    <h1 class="response" id="wrong"><span class="dark-blue">Nope!</span> Not a palindrome.</h1>
+    <h1 class="response" id="nothing">Please enter a <span class="dark-blue">word</span> or <span class="dark-blue">phrase</span>.</h1>
+      <hr>
+    <h2>What is a Palindrome?</h2>
+    <ul>
+      <li><span class="bold">•</span> A palindrome is <span class="dark-blue bold">word</span>, <span class="dark-blue bold">phrase</span>, <span class="dark-blue bold">number</span> or <span class="dark-blue bold">sequence of characters</span> that reads the same <span class="bold">backwards</span> as <span class="bold">forwards</span>, e.g. <span>"madam"</span> or <span>"nurses run".</span></li>
+      <li><span class=" bold">•</span> Sentence-length palindromes may be written when allowances are made for adjustments to capital letters, punctuation, and word dividers, such as <span>"A man, a plan, a canal, Panama!"</span></li>
+      <li><span class="bold">•</span> The word itself is derived from the Greek roots <span class="dark-blue bold">palin</span> (πάλιν; "again") and <span class="dark-blue bold">dromos</span> (δρóμος; "way, direction")</li>
+      <li><span class="bold">•</span> According to Guinness World Records, the Finnish 19-letter word <span class="dark-blue bold">saippuakivikauppias</span> (a soapstone vendor), is the world's longest palindromic word in everyday use.</li>
+    </ul>
+  </div>
+  <footer class="white-text">
+    <p id="footerPara"> &copy; Adam Walker 2020 </p>
+    </footer>
+    <script type="text/javascript" src="PalindromeCheckerJS.js"></script>
+</body>
+  </html>
